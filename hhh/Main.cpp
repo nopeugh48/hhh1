@@ -1,4 +1,4 @@
-// no it doesnt work :(
+// no it doesnt work send help :(
 #include "Gui.h"
 #include <windows.h>
 
