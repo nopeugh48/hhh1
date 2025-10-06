@@ -1,4 +1,4 @@
-// Main.cpp
+// hii its me
 #include "Gui.h"
 #include <windows.h>
 
