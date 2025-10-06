@@ -1,4 +1,4 @@
-// hii its me
+// no it doesnt work :(
 #include "Gui.h"
 #include <windows.h>
 
