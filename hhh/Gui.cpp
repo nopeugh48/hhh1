@@ -151,12 +151,9 @@ INT_PTR CALLBACK GemDialogProc(HWND hDlg, UINT msg, WPARAM wParam, LPARAM lParam
                 MessageBoxW(hDlg, L"Введите название камня.", L"Ошибка", MB_OK | MB_ICONERROR);
                 return (INT_PTR)TRUE;
             }
+            // Проверка вводимой цены (должно быть положительное число)
             if (!(g_dialogData.price > 0.0)) {
                 MessageBoxW(hDlg, L"Цена должна быть положительным числом.", L"Ошибка", MB_OK | MB_ICONERROR);
-                return (INT_PTR)TRUE;
-            }
-            if (!(g_dialogData.weight > 0.0)) {
-                MessageBoxW(hDlg, L"Вес должен быть положительным числом.", L"Ошибка", MB_OK | MB_ICONERROR);
                 return (INT_PTR)TRUE;
             }
 
