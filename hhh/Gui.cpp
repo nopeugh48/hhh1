@@ -156,6 +156,11 @@ INT_PTR CALLBACK GemDialogProc(HWND hDlg, UINT msg, WPARAM wParam, LPARAM lParam
                 MessageBoxW(hDlg, L"Цена должна быть положительным числом.", L"Ошибка", MB_OK | MB_ICONERROR);
                 return (INT_PTR)TRUE;
             }
+            // Проверка вводимого веса (должно быть положительное число)
+            if (!(g_dialogData.weight > 0.0)) {
+                MessageBoxW(hDlg, L"Вес должен быть положительным числом.", L"Ошибка", MB_OK | MB_ICONERROR);
+                return (INT_PTR)TRUE;
+            }
 
             g_dialogData.accepted = true;
             EndDialog(hDlg, IDOK);
